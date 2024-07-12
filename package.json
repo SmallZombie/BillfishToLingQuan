@@ -1,0 +1,30 @@
+{
+  "name": "billfish-to-lingquan",
+  "version": "1.0.0",
+  "description": "一个将 Billfish 库转换为零泉库的工具",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmallZombie/BillfishToLingQuan.git"
+  },
+  "keywords": [
+    "billfish",
+    "lingquan",
+    "convert"
+  ],
+  "author": "SmallZombie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SmallZombie/BillfishToLingQuan/issues"
+  },
+  "homepage": "https://github.com/SmallZombie/BillfishToLingQuan#readme",
+  "dependencies": {
+    "adm-zip": "^0.5.14",
+    "md5": "^2.3.0",
+    "sqlite3": "^5.0.0",
+    "tar": "^7.4.0"
+  }
+}
