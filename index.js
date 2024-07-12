@@ -184,7 +184,7 @@ bf.getFiles().then(async res => {
         }
 
         const WH = await bf.getWHByFileId(i.id);
-
+        const userData = await bf.getUserDataByFid(i.id);
         const info = {
             id,
             hashId: '',
@@ -193,13 +193,13 @@ bf.getFiles().then(async res => {
             width: WH.width,
             height: WH.height,
             size: null,
-            score: await bf.getUserDataByFid(id).score,
+            score: userData.score,
             time: i.ctime, // createAt
             revisionTime: i.mtime,
             tags: await bf.getTagsByFileId(i.id),
             folders: null,
-            note: await bf.getUserDataByFid(id).note,
-            url: await bf.getUserDataByFid(id).origin,
+            note: userData.note,
+            url: userData.origin,
             palettes: null,
             delete: null,
             usnIndex: null,
